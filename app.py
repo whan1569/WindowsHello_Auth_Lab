@@ -57,6 +57,7 @@ def register_begin():
         user_display_name="GMT Administrator",
         challenge=register_challenge,
         authenticator_selection=AuthenticatorSelectionCriteria(
+            authenticator_attachment="platform",
             resident_key=ResidentKeyRequirement.PREFERRED,
             user_verification=UserVerificationRequirement.REQUIRED,
         ),
